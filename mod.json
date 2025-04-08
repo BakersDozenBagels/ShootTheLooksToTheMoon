@@ -1,0 +1,15 @@
+{
+	"id": "shootthelookstothemoon",
+	"name": "Shoot the Looks to the Moon",
+	"author": ["BakersDozenBagels"],
+	"description": "Replaces Shoot the Moon with Looks to the Moon.\n\nArt by Ame (@toworou on Discord)",
+	"prefix": "shootthelookstothemoon",
+	"main_file": "main.lua",
+	"badge_colour": "ffffff",
+	"badge_text_colour": "000000",
+	"version": "2.0.1",
+	"dependencies": [
+		"Steamodded (>=1.*)",
+		"malverk"
+	]
+}
