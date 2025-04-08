@@ -24,9 +24,22 @@ AltTexture {
         }
     }
 }
+AltTexture {
+    key = "febbles",
+    set = "Joker",
+    path = "febbles.png",
+    keys = { "j_baron" },
+    loc_txt = { name = "5 Pebbles" },
+    localization = {
+        j_baron = {
+            name = "5 Pebbles",
+            badge = "lttm_ame"
+        }
+    }
+}
 TexturePack {
     key = "shootthelookstothemoon",
-    textures = { "shootthelookstothemoon_lttm", "shootthelookstothemoon_echo" },
+    textures = { "shootthelookstothemoon_lttm", "shootthelookstothemoon_echo", "shootthelookstothemoon_febbles" },
     loc_txt = {
         name = "Shoot the Looks to the Moon",
         text = { "Replaces Shoot the Moon", "with Looks to the Moon" }
@@ -36,6 +49,8 @@ Malverk.badges.lttm_ame = function(self, card, badges)
     badges[#badges + 1] = create_badge('Artist: Ame', G.C.PURPLE, G.C.WHITE, 0.7)
     if self.key == 'j_shoot_the_moon' then
         badges[#badges + 1] = create_badge('Common', G.C.RARITY.Common, nil, 1.2)
+    elseif self.key == 'j_baron' then
+        badges[#badges + 1] = create_badge('Rare', G.C.RARITY.Rare, nil, 1.2)
     else
         badges[#badges + 1] = create_badge('Uncommon', G.C.RARITY.Uncommon, nil, 1.2)
     end
